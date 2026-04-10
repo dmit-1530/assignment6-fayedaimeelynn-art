@@ -2,7 +2,6 @@
     --light-orange: #EA580C;
     --orange:#CB4E0B;
     --grey: #C1C4C8;
-    --background-grey:#F2F6FA;
 }
 
 body {
@@ -11,6 +10,32 @@ body {
 }
 
 .container {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
     margin: ;
+}
+
+h2 {
+   font-size: 1.75rem; 
+   font-weight: 700;
+   line-height: 1.5;
+   border-left: .1875rem solid var(--orange);
+   border-bottom: .125rem solid var(--orange);
+   padding: .1875rem .25rem;
+}
+
+p { 
+    font-size: 1rem;
+    padding: 24px 0;
+}
+
+legend {
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1rem;
+}
+
+form {
+    background-color:#ffffff ;
 }
