@@ -90,38 +90,26 @@ form fieldset label {
     cursor: pointer;
     flex-grow: 1;
     flex-basis: calc((37rem - 100%) * 999);
-    min-inline-size: min(100%, 10rem);
+    min-inline-size: min(100%, 15rem);
     max-inline-size: 100%;
     white-space: nowrap;
     text-align: center;
-  
 }
 
 span {
     margin-right: 1rem;
 }
 
-fieldset label:has(input[type="radio"]) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 fieldset label:has(input[type="radio"]:checked) {
     background-color: var(--light-orange-hs);
     color: #fff;
-  
 }
-
 
 form textarea {
     max-height: 16rem;
     min-height: 5rem;
     resize: vertical;
 }
-
-
-
 
 input[type="submit"] {
        display: flex;
@@ -137,9 +125,43 @@ input[type="submit"] {
     padding: 1rem 1rem;
     width: 100%;
     transition: all 0.3s ease;
-
 }
 
 input[type="submit"]:hover {
     background-color: var(--light-orange-hs);
+}
+
+@media (min-width:740px){
+    .inner-header-container {
+        display: flex;
+        gap: 1rem;
+    }
+    img {
+        width: 60%;
+    }
+  
+}
+
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .inner-header-container {
+        flex: 0 0 30%;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1660px) {
+    .container {
+        max-width: 90.375rem;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
 }
